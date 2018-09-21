@@ -32,6 +32,7 @@ namespace Grupp_8_Spel
             return CurrentPosition = Position;
 
         }
+
         
     }
 }

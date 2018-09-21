@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Grupp_8_Spel
 {
-    class Room
+    class Item
     {
-        
         public string Description { get; set; }
         public string Name { get; set; }
     }
