@@ -16,7 +16,7 @@ namespace Grupp_8_Spel
             Room room2 = new Room() { Name = "Rum2"};
             game.RoomList.Add(room1);
             game.RoomList.Add(room2);
-            //player.CurrentPosition = room1;
+            player.CurrentPosition = room1;//Startpos
             Console.WriteLine(player.CurrentPosition.Name);
             player.Move(player.CurrentPosition, room2);//Flytta från till.
             Console.WriteLine(player.CurrentPosition.Name);
