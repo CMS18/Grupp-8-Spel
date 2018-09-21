@@ -13,7 +13,6 @@ namespace Grupp_8_Spel
         public List<Item> ItemList { get; set; }
         public List<Room> RoomList { get; set; }
         public List<Exits> exitList { get; set; }
-        Room[,] mapArray = new Room[3, 3];
         
         public WorldBuilder()
         {
