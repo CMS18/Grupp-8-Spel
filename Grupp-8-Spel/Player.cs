@@ -16,7 +16,22 @@ namespace Grupp_8_Spel
             if (Console.ReadLine().ToUpper() == "UP") {//Byt ut
                 Position = next;
             }
+            else if ( Console.ReadLine().ToUpper() == "DOWN")
+            {
+                Position = next;
+            }
+            else if (Console.ReadLine().ToUpper() == "LEFT")
+            {
+                Position = next;
+            }
+            else if (Console.ReadLine().ToUpper() == "RIGHT")
+            {
+                Position = next;
+
+            }
             return CurrentPosition = Position;
+
         }
+        
     }
 }
