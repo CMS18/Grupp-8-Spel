@@ -11,5 +11,12 @@ namespace Grupp_8_Spel
         
         public string Description { get; set; }
         public string Name { get; set; }
+        public bool exits { get; set; }
+
+        //public bool exitTrue(bool _exit)
+        //{
+        //    exits = _exit;
+        //    return exits;
+        //}
     }
 }

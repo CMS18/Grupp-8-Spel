@@ -8,9 +8,18 @@ namespace Grupp_8_Spel
 {
     class WorldBuilder
     {
-        Game game = new Game();
+        int x = 0;
+        int y = 0;
         public List<Item> ItemList { get; set; }
         public List<Room> RoomList { get; set; }
+        public List<Exits> exitList { get; set; }
+        Room[,] mapArray = new Room[3, 3];
+        
+        public WorldBuilder()
+        {
+            ItemList = new List<Item>();
+            RoomList = new List<Room>();
+        }
         public void CreateGame()
         {
             CreateWorld();
@@ -18,25 +27,29 @@ namespace Grupp_8_Spel
         }
         public void CreateWorld()
         {
-          
+            Exits exitForRoom1 = new Exits() { ExitName = "Dörr", Description = "Dörren glider upp utan problem" };
             Room room1 = new Room() { Name = "Rum1", Description = "Här är ett vackert rum, med sniglar på väggarna" };
             Room room2 = new Room() { Name = "Rum2", Description = "Oj, vad mycket mögel det var här!" };
-            game.RoomList.Add(room1);
-            game.RoomList.Add(room2);
+            RoomList.Add(room1);
+            
+            
+            
+            RoomList.Add(room2);
         }
+      
         public void CreateItem()
         {
-            Item itemSpaghetti = new Item() { Name = "Spaghetti", Description = "Perfekt för att göra en pasta på!" }; 
-            Item itemParmesan = new Item() { Name = "Parmesan", Description = "Perfekt för att göra en pasta på!" }; 
-            Item itemBacon = new Item() { Name = "Bacon", Description = "Perfekt för att göra en pasta på!" }; 
+            Item itemSpaghetti = new Item() { Name = "Spaghetti", Description = "Perfekt för att göra en pasta på!" };
+            Item itemParmesan = new Item() { Name = "Parmesan", Description = "Perfekt för att göra en pasta på!" };
+            Item itemBacon = new Item() { Name = "Bacon", Description = "Perfekt för att göra en pasta på!" };
             Item itemCarbonara = new Item() { Name = "Carbonara", Description = "En krämig pasta Carbonara" };
-            game.ItemList.Add(itemBacon);
-            game.ItemList.Add(itemSpaghetti);
-            game.ItemList.Add(itemParmesan);
-            game.ItemList.Add(itemCarbonara);
+            ItemList.Add(itemBacon);
+            ItemList.Add(itemSpaghetti);
+            ItemList.Add(itemParmesan);
+            ItemList.Add(itemCarbonara);
 
         }
-        
-        
+
+
     }
 }
