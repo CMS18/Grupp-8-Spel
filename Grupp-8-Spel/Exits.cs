@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace Grupp_8_Spel
 {
-    class Exits
+    class Exit
     {
         public List<Room> RoomList { get; set; }
         public string Description { get; set; }
         public string ExitName { get; set; }
-        Room[,] mapArray = new Room[3, 3];
+        public string Direction { get; set; }   //i vilket värderstreck finns exit
+        public bool CanBeOpened { get; set; }
 
 
         public void moveExit(string move)

@@ -11,7 +11,13 @@ namespace Grupp_8_Spel
         
         public string Description { get; set; }
         public string Name { get; set; }
-        public bool exits { get; set; }
+        //public bool exits { get; set; }
+        public List<Exit> Exits { get; set; }
+
+        public Room()
+        {
+            Exits = new List<Exit>();
+        }
 
         //public bool exitTrue(bool _exit)
         //{
