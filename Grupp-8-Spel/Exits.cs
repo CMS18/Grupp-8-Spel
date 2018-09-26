@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace Grupp_8_Spel
 {
-    class Exits
+    class Exit
     {
         public List<Room> RoomList { get; set; }
         public string Description { get; set; }
         public string ExitName { get; set; }
+        public string Direction { get; set; }   //i vilket värderstreck finns exit
+        public bool CanBeOpened { get; set; }
 
 
         public void moveExit(string move)
@@ -22,21 +24,22 @@ namespace Grupp_8_Spel
             string east = "east".ToUpper();
             bool northSouth;
             bool eastWest;
+            int northSouthInt = 2;
+            int eastWestInt = 0;
 
-
-            if( move == north)
+            if (move == north)
             {
-               
+                northSouthInt--;
                 northSouth = true;
-                if()
+                if (northSouth)
                 {
-
+                    //mapArray[northSouthInt, eastWestInt]
                 }
             }
             else if (move == south)
             {
                 northSouth = false;
-            }            
+            }
             if (move == east)
             {
                 eastWest = true;
