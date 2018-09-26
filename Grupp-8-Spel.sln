@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grupp-8-Spel", "Grupp-8-Spel\Grupp-8-Spel.csproj", "{C8482039-AABB-49B7-86CE-3C08262DBCEE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grupp-8-Adventure", "TheoTestar\Grupp-8-Adventure.csproj", "{AC31FF1D-3C48-4CF2-A1E6-F5E7F51CC898}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C8482039-AABB-49B7-86CE-3C08262DBCEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8482039-AABB-49B7-86CE-3C08262DBCEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8482039-AABB-49B7-86CE-3C08262DBCEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC31FF1D-3C48-4CF2-A1E6-F5E7F51CC898}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC31FF1D-3C48-4CF2-A1E6-F5E7F51CC898}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC31FF1D-3C48-4CF2-A1E6-F5E7F51CC898}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC31FF1D-3C48-4CF2-A1E6-F5E7F51CC898}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
